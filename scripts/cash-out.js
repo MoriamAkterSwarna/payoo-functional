@@ -23,7 +23,16 @@ document
       const newBalance = balance - cashOut;
       document.getElementById("account-balance").innerText = newBalance;
 
-      
+      // add to transaction history
+      const div = document.createElement("div");
+      div.classList.add("bg-white", "p-4", "my-4", "shadow", "rounded-lg");
+      div.innerHTML = `
+                <h4 class="text-xl font-bold">Cash Out</h4>
+                <p>${cashOut} withdraw. New Balance ${newBalance}</p>
+                <p class="text-emerald-400 text-sm">Transaction Date: ${new Date().toLocaleString()}</p>
+            `;
+
+      document.getElementById("transaction-container").appendChild(div);
     } else {
       alert("No money for you.... DGM.");
     }
