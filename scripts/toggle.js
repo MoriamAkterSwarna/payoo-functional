@@ -22,3 +22,10 @@ document
   .addEventListener("click", function () {
     showSectionById("cash-out-form");
   });
+
+
+  document
+    .getElementById("show-transaction-history")
+    .addEventListener("click", function () {
+      showSectionById("transaction-section");
+    });
