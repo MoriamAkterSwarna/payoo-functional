@@ -146,7 +146,48 @@
        
         <section id="cash-out-form" class="py-5 hidden">
           <h2 class="text-2xl text-center text-blue-700">Cash-Out</h2>
-          
+          <div class="max-w-sm mx-auto space-y-3">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Agent Number</span>
+              </label>
+              <input
+                id="cashout-acc"
+                type="text"
+                placeholder="11 Digit Number"
+                class="bg-base-200 p-2 outline-none min-w-full rounded-full border-base-200 focus:border-2 focus:border-blue-700"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Amount</span>
+              </label>
+              <input
+                id="input-cash-out"
+                type="text"
+                placeholder="Amount to Withdraw "
+                class="bg-base-200 p-2 outline-none min-w-full rounded-full border-base-200 focus:border-2 focus:border-blue-700"
+                required
+              />
+            </div>
+            <div class="">
+              <input
+                id="input-cash-out-pin"
+                type="text"
+                placeholder="4 Digit PIN"
+                class="bg-base-200 p-2 outline-none min-w-full rounded-full border-base-200 focus:border-2 focus:border-blue-700"
+                required
+              />
+              <button
+                id="btn-cash-out"
+                class="btn bg-btn1 text-white min-w-full rounded-full mt-4"
+              >
+                WithDraw
+              </button>
+            </div>
+          </div>
+
         </section>
         <!-- Cash Out Section end-->
 
@@ -155,7 +196,7 @@
 
 
       <script src="./scripts/common-func.js"></script>
-      <!-- <script src="./scripts/add-money.js"></script> -->
+      <script src="./scripts/add-money.js"></script>
         <script src="./scripts/cash-out.js"></script>
         <script src="./scripts/toggle.js"></script>
   </body>
